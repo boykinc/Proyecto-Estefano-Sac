@@ -1,0 +1,199 @@
+﻿@model IEnumerable<Dominio.Entidad.Negocios.Entidad.Empleado>
+@{
+    ViewBag.Title = "ConsultaEmpleados";
+}
+
+
+
+<h2><strong><em>Consultar Empleados</em></strong></h2>
+
+@using (Html.BeginForm())
+{
+    <div>
+        <hr style="border:5px solid black;" />
+
+        <strong><em style="display: inline-block; width: 130px; font-size: 20px;"> Nombres :</em></strong>
+        @Html.TextBox("nom", string.Empty, new { @class = "form-control", type = "text", style = "display: inline-block;margin-right:50px;" })
+
+        <strong><em style="display: inline-block; width: 130px; font-size: 20px; "> Pais : </em></strong>
+        @Html.DropDownList("pai", (SelectList)ViewBag.selectPaises, "Seleccione un Pais", new { @class = "form-control", style = "display: inline-block;margin-right:50px;" })
+
+
+        <button type="submit" class="btn btn-success" style="display: inline-block;">Consultar</button>
+
+        <hr style="border:5px solid black;" />
+    </div>
+
+}
+
+<p>
+    @Html.ActionLink("Nuevo Empleado", "Agregar", null, new { @class = "btn btn-primary" })
+  
+</p>
+
+
+@if (Model.Any())
+{
+
+    <table class="table table-info table-hover  table-bordered border-dark">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.idEmpleado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Apellidos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Direccion)
+            </th>
+            @*<th>
+                    @Html.DisplayNameFor(model => model.FechaIngreso)
+                </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.FechaIngresoTexto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Remuneracion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HorasTrabajadas)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Correo)
+            </th>
+            @*<th>
+                    @Html.DisplayNameFor(model => model.idPais)
+                </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.Pais)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.idEmpleado)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nombre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Apellidos)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Direccion)
+                </td>
+                @*<td>
+                        @Html.DisplayFor(modelItem => item.FechaIngreso)
+                    </td>*@
+                <td>
+                    @Html.DisplayFor(modelItem => item.FechaIngresoTexto)
+                </td>
+                <td>
+                    S/.@Html.DisplayFor(modelItem => item.Remuneracion)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HorasTrabajadas) Horas
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Correo)
+                </td>
+                @*<td>
+                        @Html.DisplayFor(modelItem => item.idPais)
+                    </td>*@
+                <td>
+                    @Html.DisplayFor(modelItem => item.Pais)
+                </td>
+                <td>
+                    @Html.ActionLink("Editar", "Editar", new { id = item.idEmpleado }, new { @class = "btn btn-info" })
+                    @Html.ActionLink("Details", "Details", new { id = item.idEmpleado }, new { @class = "btn btn-warning" })
+                    <button class="btn btn-danger" onclick="mostrarSweetAlert2Question('@item.idEmpleado', true)">Delete</button>
+                </td>
+            </tr>
+        }
+
+    </table>
+
+    <div style="background-color: aliceblue; margin: 0px; font-size: 15px; border: 2px solid black; text-align: center; border-radius: 0px 20px; ">
+
+        <strong>
+            <em>
+                @ViewBag.mensaje
+            </em>
+        </strong>
+    </div>
+
+
+}
+
+
+
+
+<br />
+<div>
+    @for (int i = 0; i < (int)ViewBag.numberPages; i++)
+    {
+        @Html.ActionLink(
+            $"{(i + 1)}",
+            "ConsultaEmpleados",
+            new { numberPage = i, nom = ViewBag.nom, pai = ViewBag.selectPaises.SelectedValue },
+            new { @class = "btn btn-success", href = Url.Action("ConsultaEmpleados", new { numberPage = i, nom = ViewBag.nom, pai = ViewBag.selectPaises.SelectedValue }) }
+        )
+    }
+</div>
+
+<div>
+    @{
+        string mensaje = @ViewBag.mensajeEliminar + TempData["MensajeEliminacion"];
+    }
+    <br />
+
+    @if (!string.IsNullOrEmpty(mensaje))
+    {
+        <div id="alertMensaje" class="alert alert-info alert-dismissible fade show custom-alert" role="alert">
+            <strong>¡Eliminado! @mensaje</strong>
+
+        </div>
+    }
+    <br />
+</div>
+
+<footer class="container body-content">
+    <p style="color:white;font-size:17px;">  <strong><em> &copy; @DateTime.Now.Year - ESTEFANO SAC</em></strong></p>
+</footer>
+
+<script>
+
+    // Espera 5 segundos y luego oculta la alerta
+    setTimeout(function () {
+        var alertElement = document.getElementById('alertMensaje');
+        if (alertElement) {
+            alertElement.classList.remove('show'); // Quita la clase 'show' para ocultar la alerta
+            alertElement.classList.add('hide'); // Agrega la clase 'hide' para ocultar completamente la alerta
+        }
+    }, 4000); // Tiempo en milisegundos (4 segundos en este caso)
+
+    function mostrarSweetAlert2Question(idEmpleado, confirmar) {
+        Swal.fire({
+            title: "¿Estás seguro de Eliminar ha este Empleado?",
+            text: "El Empleado de código " + idEmpleado + " será eliminado",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Sí",
+            cancelButtonText: "No"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = "/Empleado/Delete?id=" + idEmpleado + "&confirmar=" + confirmar;
+            }
+        });
+    }
+
+</script>
+

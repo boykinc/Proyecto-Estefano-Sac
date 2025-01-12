@@ -1,0 +1,12 @@
+C:\CICLO IV-COMPUTACION E INFORMATICA\EXPERIENCIAS FORMATIVAS\Sistema Estefano SAC\appEstefanoSac\Infraestructura.Data.Negocios\bin\Debug\Infraestructura.Data.Negocios.dll
+C:\CICLO IV-COMPUTACION E INFORMATICA\EXPERIENCIAS FORMATIVAS\Sistema Estefano SAC\appEstefanoSac\Infraestructura.Data.Negocios\bin\Debug\Infraestructura.Data.Negocios.pdb
+C:\CICLO IV-COMPUTACION E INFORMATICA\EXPERIENCIAS FORMATIVAS\Sistema Estefano SAC\appEstefanoSac\Infraestructura.Data.Negocios\bin\Debug\Dominio.Entidad.Negocios.dll
+C:\CICLO IV-COMPUTACION E INFORMATICA\EXPERIENCIAS FORMATIVAS\Sistema Estefano SAC\appEstefanoSac\Infraestructura.Data.Negocios\bin\Debug\Dominio.Repositorio.dll
+C:\CICLO IV-COMPUTACION E INFORMATICA\EXPERIENCIAS FORMATIVAS\Sistema Estefano SAC\appEstefanoSac\Infraestructura.Data.Negocios\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\CICLO IV-COMPUTACION E INFORMATICA\EXPERIENCIAS FORMATIVAS\Sistema Estefano SAC\appEstefanoSac\Infraestructura.Data.Negocios\bin\Debug\Dominio.Entidad.Negocios.pdb
+C:\CICLO IV-COMPUTACION E INFORMATICA\EXPERIENCIAS FORMATIVAS\Sistema Estefano SAC\appEstefanoSac\Infraestructura.Data.Negocios\bin\Debug\Dominio.Repositorio.pdb
+C:\CICLO IV-COMPUTACION E INFORMATICA\EXPERIENCIAS FORMATIVAS\Sistema Estefano SAC\appEstefanoSac\Infraestructura.Data.Negocios\obj\Debug\Infraestructura.Data.Negocios.csproj.AssemblyReference.cache
+C:\CICLO IV-COMPUTACION E INFORMATICA\EXPERIENCIAS FORMATIVAS\Sistema Estefano SAC\appEstefanoSac\Infraestructura.Data.Negocios\obj\Debug\Infraestructura.Data.Negocios.csproj.CoreCompileInputs.cache
+C:\CICLO IV-COMPUTACION E INFORMATICA\EXPERIENCIAS FORMATIVAS\Sistema Estefano SAC\appEstefanoSac\Infraestructura.Data.Negocios\obj\Debug\Infraest.D95D3DD3.Up2Date
+C:\CICLO IV-COMPUTACION E INFORMATICA\EXPERIENCIAS FORMATIVAS\Sistema Estefano SAC\appEstefanoSac\Infraestructura.Data.Negocios\obj\Debug\Infraestructura.Data.Negocios.dll
+C:\CICLO IV-COMPUTACION E INFORMATICA\EXPERIENCIAS FORMATIVAS\Sistema Estefano SAC\appEstefanoSac\Infraestructura.Data.Negocios\obj\Debug\Infraestructura.Data.Negocios.pdb

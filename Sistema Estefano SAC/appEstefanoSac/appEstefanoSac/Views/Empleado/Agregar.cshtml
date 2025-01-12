@@ -1,0 +1,141 @@
+﻿@model Dominio.Entidad.Negocios.Entidad.Empleado
+
+@{
+    ViewBag.Title = "Agregar";
+}
+
+<h2><strong><em>Registrar Empleado</em></strong></h2>
+
+
+@using (Html.BeginForm(null, null, FormMethod.Post, new { id = "formEmpleado" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="row g-3 needs-validation" style="font-size:20px;font-family:'Times New Roman';color:black;">
+
+        <hr />
+        @*@Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                @Html.LabelFor(model => model.idEmpleado, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.idEmpleado, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.idEmpleado, "", new { @class = "text-danger" })
+                </div>
+            </div>*@
+
+        <div class="col-md-6">
+            <strong> @Html.LabelFor(model => model.Nombre, htmlAttributes: new { @class = "control-label col-md-2" })</strong>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Nombre, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Nombre, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <strong> @Html.LabelFor(model => model.Apellidos, htmlAttributes: new { @class = "control-label col-md-2" })</strong>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Apellidos, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Apellidos, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <strong>@Html.LabelFor(model => model.Direccion, htmlAttributes: new { @class = "control-label col-md-2" })</strong>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Direccion, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Direccion, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <strong>@Html.LabelFor(model => model.FechaIngreso, htmlAttributes: new { @class = "control-label col-md-6" })</strong>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.FechaIngreso, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.FechaIngreso, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <strong> @Html.LabelFor(model => model.Remuneracion, htmlAttributes: new { @class = "control-label col-md-4" })</strong>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Remuneracion, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Remuneracion, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <strong> @Html.LabelFor(model => model.HorasTrabajadas, htmlAttributes: new { @class = "control-label col-md-6" })</strong>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.HorasTrabajadas, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.HorasTrabajadas, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <strong> @Html.LabelFor(model => model.Correo, htmlAttributes: new { @class = "control-label col-md-4" })</strong>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Correo, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Correo, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <strong> @Html.Label("Paises", htmlAttributes: new { @class = "control-label col-md-2" })</strong>
+            <div class="col-md-10">
+                @*@Html.EditorFor(model => model.idPais, new { htmlAttributes = new { @class = "form-control" } })*@
+                @Html.DropDownList("idPais", (SelectList)ViewBag.selectPaises, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.idPais, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        @*<div class="form-group">
+                @Html.LabelFor(model => model.Pais, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Pais, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Pais, "", new { @class = "text-danger" })
+                </div>
+            </div>*@
+        <br />
+        <br />
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                @Html.ActionLink("Nuevo", "Agregar", null, new { @class = "btn btn-primary" })
+                <input type="button" value="Crear" class="btn btn-success" onclick="agregar()" />
+
+            </div>
+        </div>
+    </div>
+}
+
+<br />
+<div>
+    @Html.ActionLink("Retornar", "ConsultaEmpleados", null, new { @class = "btn btn-secondary" })
+</div>
+<br />
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script>
+        function agregar() {
+            // Envía el formulario
+            $("#formEmpleado").submit();
+        }
+
+        // Esta función se ejecutará después de que el formulario se haya enviado correctamente
+        $(document).ready(function () {
+            var mensaje = '@ViewBag.mensaje';
+            if (mensaje) {
+                // Muestra el mensaje si está definido
+                Swal.fire({
+                    title: "¡Se agrego Correctamente!",
+                    text: mensaje,
+                    icon: "success"
+                });
+            }
+        });
+    </script>
+}
+
+<footer class="container body-content">
+    <p style="color:white;font-size:17px;">  <strong><em> &copy; @DateTime.Now.Year - ESTEFANO SAC</em></strong></p>
+</footer>

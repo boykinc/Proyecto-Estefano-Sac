@@ -1,0 +1,259 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        /* CSS */
+        main {
+           
+        
+           
+            color: #fff; /* Color de texto blanco sobre el fondo */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente predeterminada */
+            line-height: 1.8; /* Espacio entre líneas */
+        }
+
+        .paddingTB60 {
+            padding: 60px 0px;
+        }
+
+        .about-section {
+            text-align: center; /* Centrar el contenido */
+            padding: 20px 0;
+            background-color: rgba(0, 0, 0, 0.7); /* Overlay semi-transparente */
+        }
+
+        .about-title {
+            margin-bottom: 10px; /* Espacio bajo el título */
+        }
+
+            .about-title h1 {
+                font-size: 45px;
+                font-weight: 600;
+                text-transform: uppercase; /* Convertir texto a mayúsculas */
+                letter-spacing: 1px; /* Espaciado entre letras */
+                margin-bottom: 15px; /* Espacio inferior más pequeño */
+            }
+
+            .about-title span {
+                font-size: 45px;
+                font-weight: 700;
+                color: #AF0808; /* Color rojo para el span */
+            }
+
+            .about-title h3 {
+                font-size: 23px;
+                margin-bottom: 24px;
+            }
+
+            .about-title p {
+                margin: 0 auto 30px; /* Espaciado automático con margen inferior aumentado */
+                max-width: 600px; /* Ancho máximo del texto */
+            }
+
+        .about-icons {
+            margin-top: 30px; /* Espacio encima de los iconos sociales */
+        }
+
+            .about-icons ul {
+                list-style: none;
+                padding: 0;
+                text-align: center; /* Centrar iconos */
+            }
+
+            .about-icons li {
+                display: inline-block;
+                margin-right: 10px;
+            }
+
+            .about-icons i {
+                font-size: 35px;
+                color: #fff;
+                box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+                padding: 10px;
+                transition: all 0.3s ease;
+            }
+
+                .about-icons i:hover {
+                    transform: scale(1.1); /* Efecto de escala al pasar el ratón */
+                    color: #AF0808;
+                }
+
+        .team-section {
+            padding: 20px 0;
+            text-align: center;
+            justify-content:center;
+        }
+
+            .team-section .section-title h3 {
+                font-size: 36px;
+                font-weight: 600;
+                margin-bottom: 60px;
+            }
+
+        .team-thumb {
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 30px;
+            border-radius: 10px; /* Agregar borde redondeado */
+        }
+
+            .team-thumb img {
+                width: 100%;
+                height: auto;
+                transition: transform 0.3s ease;
+            }
+
+            .team-thumb:hover img {
+                transform: scale(1.1); /* Efecto de escala al pasar el ratón */
+            }
+
+        .team-info {
+            background: rgba(0, 0, 0, 0.7);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 15px;
+            color: #fff;
+            text-align: left;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none; /* Evita que el hover se active en el texto */
+            border-bottom-left-radius: 10px; /* Ajuste de borde redondeado */
+            border-bottom-right-radius: 10px; /* Ajuste de borde redondeado */
+        }
+
+        .team-thumb:hover .team-info {
+            opacity: 1;
+            pointer-events: auto; /* Activa el hover en el texto */
+        }
+
+        .team-info h3 {
+            margin-top: 0;
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        .team-info span {
+            display: block;
+            font-size: 14px;
+            font-weight: 400;
+            margin-top: 8px;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+            .social-icons a {
+                margin-right: 10px;
+                color: #fff;
+                transition: all 0.3s ease;
+            }
+
+                .social-icons a:hover {
+                    color: #AF0808;
+                }
+    </style>
+</head>
+<body>
+
+    <main>
+        <div class="about-section paddingTB60">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="about-title">
+                            <h1>ESTEFANO Inversión & Desarrollo <span> Inmobiliario S.A.C</span></h1>
+                            <h3>Expertos en lo que hacemos </h3>
+                            <p>Somos una empresa dedicada al desarrollo y gestión de proyectos inmobiliarios con un enfoque integral y sostenible. Desde nuestra fundación, nos hemos comprometido con la excelencia en el diseño arquitectónico, la calidad de la construcción y la satisfacción de nuestros clientes.</p>
+                            <p>Nuestra misión es facilitar el acceso a viviendas de calidad, diseñadas con estándares innovadores que promuevan el bienestar y la seguridad de las familias peruanas.</p>
+                        </div>
+                        <div class="about-icons">
+                            <ul>
+                                <li><a href="https://www.facebook.com/"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a></li>
+                                <li><a href="https://twitter.com/"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a></li>
+                                <li><a href="https://plus.google.com/"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a></li>
+                                <li><a href="mailto:bootsnipp@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="team-section paddingTB60">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title text-center">
+                            <h3 style="color:black;"><strong><em>Nuestro Equipo</em></strong></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4  col-sm-8">
+                        <div class="team-thumb">
+                            <img src="~/img/wilder.jpeg" class="img-responsive" alt="Team 1">
+                            <div class="team-info">
+                                <h3>Wilder Salazar</h3>
+                                <span>Ingeniero de Sistemas</span>
+                                <div class="social-icons">
+                                    <a href="#"><i class="fa fa-facebook-square fa-lg"></i></a>
+                                    <a href="#"><i class="fa fa-twitter-square fa-lg"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus-square fa-lg"></i></a>
+                                    <a href="#"><i class="fa fa-envelope-square fa-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-8">
+                        <div class="team-thumb">
+                            <img src="https://scontent.flim6-4.fna.fbcdn.net/v/t39.30808-6/283392092_103335195728535_3801899265768054378_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFMhK8CjUxXHGN-pjrKM7g9Z3UqreuoqoRndSqt66iqhASDztCy2zCXYfTAOFanwWsOCnKDLE5VvzRnp144Hiqr&_nc_ohc=wgil8qcL81YQ7kNvgHj2X1h&_nc_oc=AdhOYjudv9F8mWwDjrwyE0KXZsUnRs2tq6sNYRnTIqHtnH0k8UvcH7gs-JOejkcR_iU&_nc_zt=23&_nc_ht=scontent.flim6-4.fna&oh=00_AYAXrFnzhjOM_tFMe57f-VwMSRxhQQMD0AusV9Llord3uw&oe=66782980" class="img-responsive" alt="Team 2">
+                            <div class="team-info">
+                                <h3>Gustavo Orozco</h3>
+                                <span>Analista de Base de Datos</span>
+                                <div class="social-icons">
+                                    <a href="#"><i class="fa fa-facebook-square fa-lg"></i></a>
+                                    <a href="#"><i class="fa fa-twitter-square fa-lg"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus-square fa-lg"></i></a>
+                                    <a href="#"><i class="fa fa-envelope-square fa-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-8">
+                        <div class="team-thumb">
+                            <img src="~/img/giancarloRosas.jpeg" class="img-responsive" alt="Team 3">
+                            <div class="team-info">
+                                <h3>Giancarlo Rosas</h3>
+                                <span>Desarrollardor Web</span>
+                                <div class="social-icons">
+                                    <a href="#"><i class="fa fa-facebook-square fa-lg"></i></a>
+                                    <a href="#"><i class="fa fa-twitter-square fa-lg"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus-square fa-lg"></i></a>
+                                    <a href="#"><i class="fa fa-envelope-square fa-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <footer class="container body-content">
+        <p style="color:white;font-size:17px;">  <strong><em> &copy; @DateTime.Now.Year - ESTEFANO SAC</em></strong></p>
+    </footer>
+</body>
+</html>

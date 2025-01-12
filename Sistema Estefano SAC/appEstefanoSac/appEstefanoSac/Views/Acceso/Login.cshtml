@@ -1,0 +1,95 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="~/Content/CSS/Login.css" rel="stylesheet" />
+    <link href="~/Content/CSS/Mensaje.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="d-flex justify-content-center h-100">
+            <div class="card">  
+                <div class="card-header">
+                    <br />
+                    <br />
+                    <h3> ESTEFANO SAC </h3>
+                    <div class="d-flex justify-content-end social_icon">
+                        <span><i class="fab fa-facebook-square"></i></span>
+                        <span><i class="fab fa-google-plus-square"></i></span>
+                        <span><i class="fab fa-twitter-square"></i></span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <form action="@Url.Action("Login", "Acceso")" method="post" id="loginForm">
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                            </div>
+                            <input type="email" name="Correo" class="form-control" placeholder="correo" id="username" required>
+
+                        </div>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            </div>
+                            <input type="password" name="Clave" class="form-control" placeholder="contraseña" id="password" required>
+                        </div>
+
+                        <div class="row align-items-center remember">
+                            <input type="checkbox">Remember Me
+                        </div>
+                        <br />
+                        @if (ViewData["Mensaje"] != null)
+                        {
+                            <div id="alertMensaje" class="alert alert-danger alert-dismissible fade show custom-alert" role="alert">
+                                <strong>¡Error!</strong> @ViewData["Mensaje"]
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Cerrar">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        }
+
+                        <div class="d-flex justify-content-center mt-3 login_container">
+                            <button type="submit" name="button" class="btn  login_btn">Iniciar</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex justify-content-center links">
+                        No tienes una cuenta?<a href="@Url.Action("Registrar","Acceso")">Registrarse</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        // Espera 5 segundos y luego oculta la alerta
+        setTimeout(function () {
+            var alertElement = document.getElementById('alertMensaje');
+            if (alertElement) {
+                alertElement.classList.remove('show'); // Quita la clase 'show' para ocultar la alerta
+                alertElement.classList.add('hide'); // Agrega la clase 'hide' para ocultar completamente la alerta
+            }
+        }, 5000); // Tiempo en milisegundos (5 segundos en este caso)
+    </script>
+
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="~/Content/JavaScript/Login.js"></script>
+</body>
+</html>

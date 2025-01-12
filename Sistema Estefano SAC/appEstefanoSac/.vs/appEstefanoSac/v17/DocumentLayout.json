@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\CICLO IV-COMPUTACION E INFORMATICA\\EXPERIENCIAS FORMATIVAS\\Sistema Estefano SAC\\appEstefanoSac\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{67B2BFB8-B641-46E8-8A6F-E59BA944919A}|Dominio.Entidad.Negocios\\Dominio.Entidad.Negocios.csproj|c:\\ciclo iv-computacion e informatica\\experiencias formativas\\sistema estefano sac\\appestefanosac\\dominio.entidad.negocios\\entidad\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67B2BFB8-B641-46E8-8A6F-E59BA944919A}|Dominio.Entidad.Negocios\\Dominio.Entidad.Negocios.csproj|solutionrelative:dominio.entidad.negocios\\entidad\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F4BC757-801F-466E-9D28-AB8B9622843D}|appEstefanoSac\\appEstefanoSac.csproj|C:\\CICLO IV-COMPUTACION E INFORMATICA\\EXPERIENCIAS FORMATIVAS\\Sistema Estefano SAC\\appEstefanoSac\\appestefanosac\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1F4BC757-801F-466E-9D28-AB8B9622843D}|appEstefanoSac\\appEstefanoSac.csproj|solutionrelative:appestefanosac\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F4BC757-801F-466E-9D28-AB8B9622843D}|appEstefanoSac\\appEstefanoSac.csproj|C:\\CICLO IV-COMPUTACION E INFORMATICA\\EXPERIENCIAS FORMATIVAS\\Sistema Estefano SAC\\appEstefanoSac\\appestefanosac\\views\\acceso\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1F4BC757-801F-466E-9D28-AB8B9622843D}|appEstefanoSac\\appEstefanoSac.csproj|solutionrelative:appestefanosac\\views\\acceso\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Empleado.cs",
+              "DocumentMoniker": "C:\\CICLO IV-COMPUTACION E INFORMATICA\\EXPERIENCIAS FORMATIVAS\\Sistema Estefano SAC\\appEstefanoSac\\Dominio.Entidad.Negocios\\Entidad\\Empleado.cs",
+              "RelativeDocumentMoniker": "Dominio.Entidad.Negocios\\Entidad\\Empleado.cs",
+              "ToolTip": "C:\\CICLO IV-COMPUTACION E INFORMATICA\\EXPERIENCIAS FORMATIVAS\\Sistema Estefano SAC\\appEstefanoSac\\Dominio.Entidad.Negocios\\Entidad\\Empleado.cs",
+              "RelativeToolTip": "Dominio.Entidad.Negocios\\Entidad\\Empleado.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T21:33:36.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "C:\\CICLO IV-COMPUTACION E INFORMATICA\\EXPERIENCIAS FORMATIVAS\\Sistema Estefano SAC\\appEstefanoSac\\appEstefanoSac\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "appEstefanoSac\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "C:\\CICLO IV-COMPUTACION E INFORMATICA\\EXPERIENCIAS FORMATIVAS\\Sistema Estefano SAC\\appEstefanoSac\\appEstefanoSac\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "appEstefanoSac\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-25T08:15:17.513Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\CICLO IV-COMPUTACION E INFORMATICA\\EXPERIENCIAS FORMATIVAS\\Sistema Estefano SAC\\appEstefanoSac\\appEstefanoSac\\Views\\Acceso\\Login.cshtml",
+              "RelativeDocumentMoniker": "appEstefanoSac\\Views\\Acceso\\Login.cshtml",
+              "ToolTip": "C:\\CICLO IV-COMPUTACION E INFORMATICA\\EXPERIENCIAS FORMATIVAS\\Sistema Estefano SAC\\appEstefanoSac\\appEstefanoSac\\Views\\Acceso\\Login.cshtml",
+              "RelativeToolTip": "appEstefanoSac\\Views\\Acceso\\Login.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-24T03:23:19.731Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

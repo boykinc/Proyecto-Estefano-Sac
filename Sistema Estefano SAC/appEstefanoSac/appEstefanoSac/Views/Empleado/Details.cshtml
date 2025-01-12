@@ -1,0 +1,125 @@
+﻿@model Dominio.Entidad.Negocios.Entidad.Empleado
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2><strong><em>Detalle del Empleado</em></strong></h2>
+
+<hr />
+<br />
+<div>
+
+
+    <dl class=" row g-3 needs-validation  border-dark " style="background-color:powderblue;border-radius:20px 5px;">
+        <div class="col-md-4">
+            <dt>
+                @Html.DisplayNameFor(model => model.idEmpleado)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.idEmpleado)
+            </dd>
+            <hr />
+            <dt>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Nombre)
+            </dd>
+            <hr />
+            <dt>
+                @Html.DisplayNameFor(model => model.Apellidos)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Apellidos)
+            </dd>
+            <hr />
+            <dt>
+                @Html.DisplayNameFor(model => model.Direccion)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Direccion)
+            </dd>
+
+        </div>
+        <div class="col-md-4">
+
+
+            @*<dt>
+                    @Html.DisplayNameFor(model => model.FechaIngreso)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.FechaIngreso)
+                </dd>*@
+
+            <dt>
+                @Html.DisplayNameFor(model => model.FechaIngresoTexto)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.FechaIngresoTexto)
+            </dd>
+            <hr />
+            <dt>
+                @Html.DisplayNameFor(model => model.Remuneracion)
+            </dt>
+
+            <dd>
+                S/.@Html.DisplayFor(model => model.Remuneracion)
+            </dd>
+            <hr />
+            <dt>
+                @Html.DisplayNameFor(model => model.HorasTrabajadas)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.HorasTrabajadas) Horas
+            </dd>
+            <hr />
+            <dt>
+                @Html.DisplayNameFor(model => model.Correo)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Correo)
+            </dd>
+        </div>
+        <div class="col-md-4">
+
+            <dt>
+                @Html.DisplayNameFor(model => model.idPais)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.idPais)
+            </dd>
+            <hr />
+            <dt>
+                @Html.DisplayNameFor(model => model.Pais)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Pais)
+            </dd>
+            <hr />
+        </div>
+
+
+    </dl>
+
+</div>
+
+<hr />
+<p>
+    @Html.ActionLink("Editar", "Editar", new { id = Model.idEmpleado }, new { @class = "btn btn-info" }) |
+    @Html.ActionLink("Retornar", "ConsultaEmpleados", null, new { @class = "btn btn-secondary" })
+</p>
+
+<footer class="container body-content">
+    <p style="color:white;font-size:17px;">  <strong><em> &copy; @DateTime.Now.Year - ESTEFANO SAC</em></strong></p>
+</footer>

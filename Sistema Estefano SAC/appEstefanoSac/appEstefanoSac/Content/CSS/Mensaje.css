@@ -1,0 +1,19 @@
+﻿
+
+/* Estilos adicionales para las alertas */
+.alert {
+    margin-bottom: 20px; /* Espacio entre alertas */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+.alert-danger {
+    color: #721c24; /* Color del texto para alerta de error */
+    background-color: #f8d7da; /* Fondo para alerta de error */
+    border-color: #f5c6cb; /* Borde para alerta de error */
+}
+
+.alert-success {
+    color: #155724; /* Color del texto para alerta de éxito */
+    background-color: #d4edda; /* Fondo para alerta de éxito */
+    border-color: #c3e6cb; /* Borde para alerta de éxito */
+}

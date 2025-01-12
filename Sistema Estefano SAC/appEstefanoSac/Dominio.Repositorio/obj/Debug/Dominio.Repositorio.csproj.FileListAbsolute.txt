@@ -1,0 +1,8 @@
+C:\CICLO IV-COMPUTACION E INFORMATICA\EXPERIENCIAS FORMATIVAS\Sistema Estefano SAC\appEstefanoSac\Dominio.Repositorio\bin\Debug\Dominio.Repositorio.dll
+C:\CICLO IV-COMPUTACION E INFORMATICA\EXPERIENCIAS FORMATIVAS\Sistema Estefano SAC\appEstefanoSac\Dominio.Repositorio\bin\Debug\Dominio.Repositorio.pdb
+C:\CICLO IV-COMPUTACION E INFORMATICA\EXPERIENCIAS FORMATIVAS\Sistema Estefano SAC\appEstefanoSac\Dominio.Repositorio\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\CICLO IV-COMPUTACION E INFORMATICA\EXPERIENCIAS FORMATIVAS\Sistema Estefano SAC\appEstefanoSac\Dominio.Repositorio\obj\Debug\Dominio.Repositorio.csproj.AssemblyReference.cache
+C:\CICLO IV-COMPUTACION E INFORMATICA\EXPERIENCIAS FORMATIVAS\Sistema Estefano SAC\appEstefanoSac\Dominio.Repositorio\obj\Debug\Dominio.Repositorio.csproj.CoreCompileInputs.cache
+C:\CICLO IV-COMPUTACION E INFORMATICA\EXPERIENCIAS FORMATIVAS\Sistema Estefano SAC\appEstefanoSac\Dominio.Repositorio\obj\Debug\Dominio..E1B1D156.Up2Date
+C:\CICLO IV-COMPUTACION E INFORMATICA\EXPERIENCIAS FORMATIVAS\Sistema Estefano SAC\appEstefanoSac\Dominio.Repositorio\obj\Debug\Dominio.Repositorio.dll
+C:\CICLO IV-COMPUTACION E INFORMATICA\EXPERIENCIAS FORMATIVAS\Sistema Estefano SAC\appEstefanoSac\Dominio.Repositorio\obj\Debug\Dominio.Repositorio.pdb

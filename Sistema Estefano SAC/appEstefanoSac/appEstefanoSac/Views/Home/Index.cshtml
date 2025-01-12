@@ -1,0 +1,144 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<main>
+    <!-- Banner Principal -->
+        <div class="container text-center">
+            <h1><strong><em>Bienvenido a Estefano Inmobiliaria SAC</em></strong></h1>
+            <p class="lead"><strong>Conoce más sobre nuestra empresa, nuestros valores y cómo contribuimos al éxito de nuestros clientes.</strong></p>
+        </div>
+    <section id="values" class="section bg-light" style="border-radius: 0px 20px;" >
+        <div class="container" style="border-radius: 0px 20px; background-color: lightblue;">
+            <h2 class="text-center "><strong><em>Nuestros Valores</em></strong></h2>
+            <hr />
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="value text-center">
+                        <img src="~/img/valor1.png" alt="Integridad" class="img-fluid mb-3">
+                        <h3>Integridad</h3>
+                        <p>Mantenemos altos estándares éticos y actuamos con transparencia en todas nuestras operaciones.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="value text-center">
+                        <img src="~/img/valor2.png" alt="Excelencia" class="img-fluid mb-3">
+                        <h3>Excelencia</h3>
+                        <p>Nos esforzamos por superar las expectativas de nuestros clientes y brindarles el mejor servicio.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="value text-center">
+                        <img src="~/img/valor3.png" alt="Innovación" class="img-fluid mb-3">
+                        <h3>Innovación</h3>
+                        <p>Adoptamos nuevas tecnologías y métodos para mantenernos a la vanguardia del sector inmobiliario.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section py-3" style="border-radius:20px 0px; ">
+        <div class="container">
+            <h2 class="text-center mb-4" style="color:black;"><strong><em>Nuestros Servicios Internos</em></strong></h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="service text-center" style="background-color: aliceblue; border-radius: 20px 0px;">
+                        <br />
+                        <img src="~/img/servicio1.jpg" alt="Capacitación" class="img-fluid mb-3">
+                        <h3>Capacitación</h3>
+                        <p>Ofrecemos programas de capacitación continua para el desarrollo profesional de nuestros empleados.</p>
+                        <a href="#" class="btn btn-dark">Más información &raquo;</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service text-center" style="background-color: aliceblue; border-radius: 20px 0px;">
+                        <br />
+                        <img src="~/img/servicio2.jpg" alt="Soporte Técnico" class="img-fluid mb-3">
+                        <h3>Soporte Técnico</h3>
+                        <p>Brindamos soporte técnico integral para asegurar el funcionamiento eficiente de nuestras operaciones.</p>
+                        <a href="#" class="btn btn-dark">Más información &raquo;</a>
+                     </div>
+                    <br />
+                </div>
+                <div class="col-md-4" >
+                    <div class="service text-center" style="background-color: aliceblue; border-radius: 20px 0px;">
+                        <br />
+                        <img src="~/img/servicio3.jpg" alt="Recursos Humanos" class="img-fluid mb-3">
+                        <h3>Recursos Humanos</h3>
+                        <p>Gestionamos el talento humano con un enfoque en el bienestar y desarrollo de nuestros empleados.</p>
+                        <a href="#" class="btn btn-dark">Más información &raquo;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial py-4 " style="border-radius: 0px 20px; background-color: lightblue;">
+        <div class="container"  style="border-radius: 0px 20px; background-color: lightblue;">
+            <h2 class="text-center "><strong><em>Testimonios de Empleados</em></strong></h2>
+            <hr />
+            <div class="row" >
+                <div class="col-md-6">
+                    <div class="testimonial-text">
+                        <p>"Trabajar en Estefano Inmobiliaria ha sido una experiencia increíble. Aquí, realmente valoran mi desarrollo profesional y personal."</p>
+                        <p><strong>Laura Martínez</strong></p>
+                    </div>
+                </div>
+               
+                <div class="col-md-6">
+                    <div class="testimonial-text">
+                        <p>"El ambiente de trabajo es muy colaborativo y siempre hay oportunidades para aprender y crecer dentro de la empresa."</p>
+                        <p><strong>Diego Torres</strong></p>
+                    </div>
+                    <br />
+                </div>
+                
+                <hr />
+                <br />
+                <div class="col-md-6">
+                    <div class="testimonial-text">
+                        <p>"Estefano Inmobiliaria me ha brindado la plataforma perfecta para desarrollar mis habilidades y alcanzar mis metas profesionales."</p>
+                        <p><strong>Lucía González</strong></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonial-text">
+                        <p>"Aprecio mucho el compromiso de la empresa con la innovación y la mejora continua. Siempre estamos buscando nuevas formas de mejorar."</p>
+                        <p><strong>Carlos Ramírez</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="container body-content">
+    <p style="color:white;font-size:17px;">  <strong><em> &copy; @DateTime.Now.Year - ESTEFANO SAC</em></strong></p>
+</footer>
+
+<style>
+    .banner {
+        background: url('~/img/banner1.jpg') no-repeat center center;
+        background-size: cover;
+        color: white;
+        
+    }
+
+  
+
+    .value img, .service img {
+        height: 50px;
+        object-fit: cover;
+        margin-bottom: 15px;
+    }
+
+    .testimonial-text {
+        background: white;
+       border-radius:0px 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+       padding:10px;
+    }
+
+  
+</style>
